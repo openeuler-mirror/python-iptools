@@ -1,0 +1,34 @@
+--- a/setup.py	2019-01-07 12:50:08.000000000 +0800
++++ b/setup.py	2022-05-09 15:41:01.428286700 +0800
+@@ -8,7 +8,7 @@
+ if 'nosetests' in sys.argv[1:]:
+     setup_requires.append('nose>=1.0')
+ 
+-tests_require = ['nose>=1.0']
++tests_require = ['']
+ 
+ setup(
+     name='iptools',
+--- a/setup.cfg	2019-01-07 12:50:08.000000000 +0800
++++ b/setup.cfg	2022-05-09 15:41:01.428286700 +0800
+@@ -1,13 +1,3 @@
+-[nosetests]
+-verbosity=2
+-detailed-errors=1
+-with-coverage=1
+-with-doctest=1
+-cover-package=iptools
+-cover-html=1
+-cover-html-dir=docs/_build/cover
+-cover-branches=1
+-
+ [flake8]
+ count=1
+ show-pep8=1
+--- a/tests/requirements.txt	2019-01-07 12:50:08.000000000 +0800
++++ b/tests/requirements.txt	2022-05-09 15:40:17.669005200 +0800
+@@ -1,4 +1,3 @@
+-nose
+ coverage
+ nosexcover
+ flake8
